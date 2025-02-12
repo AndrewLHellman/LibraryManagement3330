@@ -41,7 +41,7 @@ public class Library {
 	
 	public void displayBooks() {
 		for(int i=0;i<this.count;i++) {
-			System.out.println(this.books[i].toString());
+			System.out.println((i+1) + ". " + this.books[i].toString());
 		}
 	}
 	
