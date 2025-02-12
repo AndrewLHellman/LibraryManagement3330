@@ -14,20 +14,26 @@ public class Library {
 	
 	public boolean addBook(Book book) {
 		if(this.count<5) {
-			this.books[this.count++] = book;
+			this.books[++this.count] = book;
 			return true;
 		}
 		return false;
 	}
 	
 	public boolean removeBook(Book book) {
+		boolean bookFound = false;
 		for(int i=0;i<this.count;i++) {
-			if(this.books[i] == book) {
-				this.books[i] = null;
-				return true;
+			if(bookFound || this.books[i] == book) {
+				if (i < 4)
+					this.books[i] = this.books[i+1];
+				else
+					this.books[i] = null;
+				bookFound = true;
 			}
 		}
-		return false;
+		if (bookFound)
+			this.count--;
+		return bookFound;
 	}
 	
 	public Book searchByISBN(String ISBN) {
@@ -41,7 +47,7 @@ public class Library {
 	
 	public void displayBooks() {
 		for(int i=0;i<this.count;i++) {
-			System.out.println((i+1) + ". " + this.books[i].toString());
+			System.out.println(this.books[i].toString());
 		}
 	}
 	
