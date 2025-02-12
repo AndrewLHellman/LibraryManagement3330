@@ -27,8 +27,9 @@ public class LibraryApp {
 		library.addBook(book2);
 		library.addBook(book3);
 		
+		
 		String searchISBN = "978-0135166307";
-		System.out.println("Searching for book with ISBN: " + searchISBN);
+		System.out.println("\nSearching for book with ISBN: " + searchISBN);
 		Book foundBook = library.searchByISBN(searchISBN);
 		if (foundBook != null) {
 			System.out.println("Book found: " + foundBook);
@@ -36,7 +37,15 @@ public class LibraryApp {
 			System.out.println("Book not found"); 
 		}
 		
+		System.out.println("\nDisplaying all books: ");
 		library.displayBooks();
 		
+		System.out.println("\nRemoving book: " + book2);
+		library.removeBook(book2);
+		
+		library.displayBooks();
+		
+		System.out.println("\nRemoving book again: " + book2);
+		library.removeBook(book2);
 	}
 }
