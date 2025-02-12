@@ -14,7 +14,7 @@ public class Library {
 	
 	public boolean addBook(Book book) {
 		if(this.count<5) {
-			this.books[++this.count] = book;
+			this.books[this.count++] = book;
 			return true;
 		}
 		return false;
