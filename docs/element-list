@@ -1,2 +1,4 @@
 module:LibraryManagement
 librarymanagement.book
+librarymanagement.library
+librarymanagement.libraryapp

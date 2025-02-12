@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"LibraryManagement","l":"librarymanagement.book"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"LibraryManagement","l":"librarymanagement.book"},{"m":"LibraryManagement","l":"librarymanagement.library"},{"m":"LibraryManagement","l":"librarymanagement.libraryapp"}];updateSearchResults();

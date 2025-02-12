@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"librarymanagement.book","l":"Book"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"librarymanagement.book","l":"Book"},{"p":"librarymanagement.library","l":"Library"},{"p":"librarymanagement.libraryapp","l":"LibraryApp"}];updateSearchResults();
