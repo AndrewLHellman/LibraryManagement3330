@@ -61,6 +61,8 @@ public class Library {
 		}
 		if (bookFound)
 			this.count--;
+		else
+			System.err.println("Cannot remove book \"" + book.toString() + "\" book does not exist in library.");
 		return bookFound;
 	}
 	
