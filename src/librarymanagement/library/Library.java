@@ -14,7 +14,7 @@ public class Library {
 	
 	public boolean addBook(Book book) {
 		if(this.count<5) {
-			this.books[++this.count] = book;
+			this.books[this.count++] = book;
 			return true;
 		}
 		return false;
@@ -41,7 +41,7 @@ public class Library {
 	
 	public void displayBooks() {
 		for(int i=0;i<this.count;i++) {
-			System.out.println(this.books[i].toString());
+			System.out.println((i+1) + ". " + this.books[i].toString());
 		}
 	}
 	

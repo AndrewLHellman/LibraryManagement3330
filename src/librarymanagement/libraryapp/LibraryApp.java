@@ -13,11 +13,7 @@ public class LibraryApp {
 		book1.setISBN("978-0135166307");
 		book1.setPrice(40.99);
 		
-		Book book2 = new Book();
-		book2.setTitle("Design Patterns");
-		book2.setAuthor("Erich Gamma");
-		book2.setISBN("978-0201633610");
-		book2.setPrice(50.99);
+		Book book2 = new Book("Design Patterns", "Erich Gamma", "978-0201633610", 50.99);
 		
 		Book book3 = new Book();
 		book3.setTitle("The Pragmattic Programmer");
