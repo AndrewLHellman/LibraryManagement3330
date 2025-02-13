@@ -7,7 +7,7 @@ public class Book {
 	
 	private String title;
 	private String author;
-	private String ISBN;
+	private String iSBN;
 	private double price;
 	
 	/**
@@ -18,7 +18,7 @@ public class Book {
 	public Book () {
 		this.title = "Unknown";
 		this.author = "Unknown";
-		this.ISBN = "Unknown";
+		this.iSBN = "Unknown";
 		this.price = 0.0;
 	}
 	
@@ -31,16 +31,16 @@ public class Book {
 	 * 					This argument is the title of the book
 	 * @param author
 	 * 					This argument is the author of the book
-	 * @param ISBN
+	 * @param iSBN
 	 * 					This argument is the ISBN of the book
 	 * @param price
 	 * 					This argument is the price of the book
 	 * 
 	 */
-	public Book (String title, String author, String ISBN, double price) {
+	public Book (String title, String author, String iSBN, double price) {
 		this.title = title;
 		this.author = author;
-		this.ISBN = ISBN;
+		this.iSBN = iSBN;
 		this.price = price;
 	}
 	
@@ -59,13 +59,13 @@ public class Book {
 			System.err.println("Cannot copy a 'null' object, creating a default book instead.");
 			this.title = "Unknown";
 			this.author = "Unknown";
-			this.ISBN = "Unknown";
+			this.iSBN = "Unknown";
 			this.price = 0.0;
 		}
 		else {
 			this.title = aBook.title;
 			this.author = aBook.author;
-			this.ISBN = aBook.ISBN;
+			this.iSBN = aBook.iSBN;
 			this.price = aBook.price;
 		}
 	}
@@ -122,7 +122,7 @@ public class Book {
 	 * 				Returns the String ISBN of the Book object.
 	 */
 	public String getISBN() {
-		return ISBN;
+		return iSBN;
 	}
 
 	/**
@@ -133,7 +133,7 @@ public class Book {
 	 * 				This argument is the String ISBN to give the book object.
 	 */
 	public void setISBN(String ISBN) {
-		this.ISBN = ISBN;
+		this.iSBN = ISBN;
 	}
 
 	/**
@@ -166,7 +166,7 @@ public class Book {
 	 */
 	@Override
 	public String toString() {
-		return this.title + " (ISBN: " + this.ISBN + ", $" + this.price + ")";
+		return this.title + " (ISBN: " + this.iSBN + ", $" + this.price + ")";
 	}
 	
 	/**
@@ -189,7 +189,7 @@ public class Book {
 		else 
 		{
 			Book otherBook = (Book) other;
-			return this.ISBN.equals(otherBook.getISBN());
+			return this.iSBN.equals(otherBook.getISBN());
 		}
 	}
 }
