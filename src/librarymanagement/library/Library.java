@@ -70,14 +70,14 @@ public class Library {
 	 * This method returns the reference to the first
 	 * Book object in the books array with a given ISBN.
 	 * 
-	 * @param ISBN
+	 * @param iSBN
 	 * 				This is the ISBN to check against.
 	 * @return
 	 * 				The reference to the Book object with the given ISBN if found. Null otherwise.
 	 */
-	public Book searchByISBN(String ISBN) {
+	public Book searchByISBN(String iSBN) {
 		for(int i=0;i<this.count;i++) {
-			if(this.books[i].getISBN() == ISBN) {
+			if(this.books[i].getISBN() == iSBN) {
 				return this.books[i];
 			}
 		}
